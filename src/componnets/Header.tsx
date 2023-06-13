@@ -22,7 +22,7 @@ export const Header = () => {
       padding="10px"
       borderRadius="20px"
       border="1px"
-      borderColor="gray.200"
+      borderColor="blackAlpha.700"
       position="sticky"
       // position="fixed"
     >
@@ -38,6 +38,7 @@ export const Header = () => {
         variant="outline"
         onClick={onOpen}
         background="transparent"
+        borderColor="blackAlpha.700"
       />
       <Drawer placement={DR} onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />

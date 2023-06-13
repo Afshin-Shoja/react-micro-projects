@@ -73,7 +73,12 @@ const Projects = () => {
       justifyItems="center"
     >
       {projectList.map((project, index) => (
-        <Card key={index} width="350px" boxShadow="xl">
+        <Card
+          backgroundColor="whiteAlpha.500"
+          key={index}
+          width="350px"
+          boxShadow="2xl"
+        >
           <CardBody>
             <Image
               src={project.picUrl}

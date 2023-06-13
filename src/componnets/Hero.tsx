@@ -5,11 +5,10 @@ export const Hero = () => {
     <Box
       padding="20px"
       borderRadius="20px"
-      border="1px"
-      borderColor="gray.200"
       marginTop="10px"
       backgroundColor="whiteAlpha.500"
-      height="400px"
+      height="500px"
+      boxShadow="2xl"
     ></Box>
   );
 };

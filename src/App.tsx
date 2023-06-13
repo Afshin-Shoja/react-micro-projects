@@ -8,7 +8,7 @@ function App() {
       <Box
         backgroundImage="url('/grain.png')"
         backgroundRepeat="repeat"
-        backgroundColor="gray"
+        backgroundColor="orange.200"
         width="100%"
         position="relative"
       >

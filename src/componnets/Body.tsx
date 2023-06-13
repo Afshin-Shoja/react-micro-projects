@@ -8,7 +8,7 @@ export const Body = () => {
       padding="20px"
       borderRadius="20px"
       border="1px"
-      borderColor="gray.200"
+      borderColor="blackAlpha.700"
       marginTop="10px"
     >
       <Hero />
