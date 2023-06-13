@@ -74,7 +74,7 @@ const Projects = () => {
     >
       {projectList.map((project, index) => (
         <Card
-          backgroundColor="whiteAlpha.500"
+          backgroundColor="whiteAlpha.200"
           key={index}
           width="350px"
           boxShadow="2xl"
