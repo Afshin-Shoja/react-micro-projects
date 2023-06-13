@@ -1,16 +1,6 @@
+import { HamburgerIcon } from "@chakra-ui/icons";
 import {
-  AddIcon,
-  EditIcon,
-  ExternalLinkIcon,
-  HamburgerIcon,
-  RepeatIcon,
-} from "@chakra-ui/icons";
-import {
-  Menu,
   IconButton,
-  MenuButton,
-  MenuItem,
-  MenuList,
   Box,
   Heading,
   HStack,
