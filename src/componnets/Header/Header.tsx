@@ -20,7 +20,7 @@ export const Header = () => {
   return (
     <HStack
       padding="10px"
-      borderRadius="20px"
+      borderRadius="0 0  20px 20px "
       border="1px"
       borderColor="blackAlpha.700"
       position="sticky"

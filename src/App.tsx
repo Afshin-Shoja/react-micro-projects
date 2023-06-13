@@ -12,7 +12,7 @@ function App() {
       width="100%"
       position="relative"
     >
-      <Container maxWidth="1200px" minWidth="300px" paddingTop="10px">
+      <Container maxWidth="1200px">
         <Header />
         <Body />
         <Footer />
