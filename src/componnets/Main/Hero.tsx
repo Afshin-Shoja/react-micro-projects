@@ -7,7 +7,6 @@ export const Hero = () => {
       borderRadius="20px"
       marginTop="10px"
       backgroundColor="whiteAlpha.500"
-      height="500px"
       boxShadow="xl"
     >
       <Grid
@@ -24,7 +23,7 @@ export const Hero = () => {
             title from the top menu.
           </Text>
         </GridItem>
-        <GridItem width="100%" minWidth={{ md: "50%" }} padding="30px">
+        <GridItem width="100%" minWidth={{ md: "50%" }}>
           <Image
             className="react-logo"
             margin="auto"
