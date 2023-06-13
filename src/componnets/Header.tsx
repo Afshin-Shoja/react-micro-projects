@@ -15,44 +15,50 @@ import {
   Heading,
   HStack,
   Spacer,
+  useDisclosure,
+  Button,
+  DrawerHeader,
+  DrawerBody,
+  DrawerOverlay,
+  Drawer,
+  DrawerContent,
 } from "@chakra-ui/react";
 
 export const Header = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const DR = "right";
   return (
     <>
       <HStack
-        padding="5px"
-        marginTop="10px"
-        border="1px soild black"
+        padding="10px"
         borderRadius="20px"
+        border="1px"
+        borderColor="gray.200"
       >
         <Box p="2">
-          <Heading size="md">react-micro-projects</Heading>
+          <Heading size="lg">react micro projects</Heading>
         </Box>
 
         <Spacer />
-        <Menu>
-          <MenuButton
-            as={IconButton}
-            aria-label="Options"
-            icon={<HamburgerIcon />}
-            variant="outline"
-          />
-          <MenuList>
-            <MenuItem icon={<AddIcon />} command="⌘T">
-              New Tab
-            </MenuItem>
-            <MenuItem icon={<ExternalLinkIcon />} command="⌘N">
-              New Window
-            </MenuItem>
-            <MenuItem icon={<RepeatIcon />} command="⌘⇧N">
-              Open Closed Tab
-            </MenuItem>
-            <MenuItem icon={<EditIcon />} command="⌘O">
-              Open File...
-            </MenuItem>
-          </MenuList>
-        </Menu>
+        <Button
+          as={IconButton}
+          aria-label="Options"
+          icon={<HamburgerIcon />}
+          variant="outline"
+          onClick={onOpen}
+          background="transparent"
+        />
+        <Drawer placement={DR} onClose={onClose} isOpen={isOpen}>
+          <DrawerOverlay />
+          <DrawerContent>
+            <DrawerHeader borderBottomWidth="1px">Basic Drawer</DrawerHeader>
+            <DrawerBody>
+              <p>Some contents...</p>
+              <p>Some contents...</p>
+              <p>Some contents...</p>
+            </DrawerBody>
+          </DrawerContent>
+        </Drawer>
       </HStack>
     </>
   );
