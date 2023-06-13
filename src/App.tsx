@@ -8,9 +8,11 @@ function App() {
         backgroundImage="url('/public/grain.png')"
         backgroundRepeat="repeat"
         backgroundColor="gray"
-        height="100vh"
+        // height="max-content"
+        height="2000px"
+        width="100%"
       >
-        <Container maxWidth="1200px" minWidth="500px" paddingTop="10px">
+        <Container maxWidth="1200px" minWidth="300px" paddingTop="10px">
           <Header />
           {/* body */}
           {/* footer */}
