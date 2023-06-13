@@ -24,6 +24,7 @@ export const Header = () => {
         borderRadius="20px"
         border="1px"
         borderColor="gray.200"
+        // position="fixed"
       >
         <Box p="2">
           <Heading size="lg">react micro projects</Heading>
