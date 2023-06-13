@@ -1,6 +1,21 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap");
+
+* {
   user-select: none;
-  /* background-image: url("../grain.png");
-  background-repeat: repeat;
-  background-color: gray; */
+  font-family: "Kalam", cursive !important;
+}
+
+/* --------------------------------- */
+
+.react-logo {
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
 }

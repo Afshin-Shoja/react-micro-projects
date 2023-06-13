@@ -1,6 +1,7 @@
 import { Box, Container } from "@chakra-ui/react";
-import { Header } from "./componnets/Header";
-import { Body } from "./componnets/Body";
+import { Body } from "./componnets/Main/Body";
+import { Footer } from "./componnets/Footer/Footer";
+import { Header } from "./componnets/Header/Header";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Container maxWidth="1200px" minWidth="300px" paddingTop="10px">
           <Header />
           <Body />
-          {/* footer */}
+          <Footer />
         </Container>
       </Box>
     </>
