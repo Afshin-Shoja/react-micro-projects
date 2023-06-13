@@ -45,7 +45,7 @@ export const Header = () => {
       <Drawer placement={DR} onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerHeader borderBottomWidth="1px">Basic Drawer</DrawerHeader>
+          <DrawerHeader borderBottomWidth="1px">Menu</DrawerHeader>
           <DrawerBody>
             <p>Some contents...</p>
             <p>Some contents...</p>
