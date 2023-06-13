@@ -36,223 +36,118 @@ export const Body = () => {
                 alt="Green double couch with wooden legs"
                 borderRadius="lg"
               />
-              <Stack mt="6" spacing="3">
+              <Stack mt="6" spacing="3" alignItems="center">
                 <Heading size="md">project one</Heading>
               </Stack>
             </CardBody>
             <Divider />
             <CardFooter>
-              <ButtonGroup spacing="2">
-                <Button variant="solid" colorScheme="blue">
+              <ButtonGroup width="100%" spacing="2">
+                <Button width="50%" variant="solid" colorScheme="blue">
                   demo
                 </Button>
-                <Button variant="ghost" colorScheme="blue">
+                <Button width="50%" variant="solid" colorScheme="blue">
                   gitHub
                 </Button>
               </ButtonGroup>
             </CardFooter>
           </Card>
           {/* ========================================= */}
-          <Card width="350px">
+          <Card width="350px" boxShadow="xl">
             <CardBody>
               <Image
                 src="/No-Image.jpg"
                 alt="Green double couch with wooden legs"
                 borderRadius="lg"
               />
-              <Stack mt="6" spacing="3">
+              <Stack mt="6" spacing="3" alignItems="center">
                 <Heading size="md">project one</Heading>
               </Stack>
             </CardBody>
             <Divider />
             <CardFooter>
-              <ButtonGroup spacing="2">
-                <Button variant="solid" colorScheme="blue">
+              <ButtonGroup width="100%" spacing="2">
+                <Button width="50%" variant="solid" colorScheme="blue">
                   demo
                 </Button>
-                <Button variant="ghost" colorScheme="blue">
+                <Button width="50%" variant="solid" colorScheme="blue">
                   gitHub
                 </Button>
               </ButtonGroup>
             </CardFooter>
           </Card>
           {/* ========================================= */}
-          <Card width="350px">
+          <Card width="350px" boxShadow="xl">
             <CardBody>
               <Image
                 src="/No-Image.jpg"
                 alt="Green double couch with wooden legs"
                 borderRadius="lg"
               />
-              <Stack mt="6" spacing="3">
+              <Stack mt="6" spacing="3" alignItems="center">
                 <Heading size="md">project one</Heading>
               </Stack>
             </CardBody>
             <Divider />
             <CardFooter>
-              <ButtonGroup spacing="2">
-                <Button variant="solid" colorScheme="blue">
+              <ButtonGroup width="100%" spacing="2">
+                <Button width="50%" variant="solid" colorScheme="blue">
                   demo
                 </Button>
-                <Button variant="ghost" colorScheme="blue">
+                <Button width="50%" variant="solid" colorScheme="blue">
                   gitHub
                 </Button>
               </ButtonGroup>
             </CardFooter>
           </Card>
           {/* ========================================= */}
-          <Card width="350px">
+          <Card width="350px" boxShadow="xl">
             <CardBody>
               <Image
                 src="/No-Image.jpg"
                 alt="Green double couch with wooden legs"
                 borderRadius="lg"
               />
-              <Stack mt="6" spacing="3">
+              <Stack mt="6" spacing="3" alignItems="center">
                 <Heading size="md">project one</Heading>
               </Stack>
             </CardBody>
             <Divider />
             <CardFooter>
-              <ButtonGroup spacing="2">
-                <Button variant="solid" colorScheme="blue">
+              <ButtonGroup width="100%" spacing="2">
+                <Button width="50%" variant="solid" colorScheme="blue">
                   demo
                 </Button>
-                <Button variant="ghost" colorScheme="blue">
+                <Button width="50%" variant="solid" colorScheme="blue">
                   gitHub
                 </Button>
               </ButtonGroup>
             </CardFooter>
           </Card>
           {/* ========================================= */}
-          <Card width="350px">
+          <Card width="350px" boxShadow="xl">
             <CardBody>
               <Image
                 src="/No-Image.jpg"
                 alt="Green double couch with wooden legs"
                 borderRadius="lg"
               />
-              <Stack mt="6" spacing="3">
+              <Stack mt="6" spacing="3" alignItems="center">
                 <Heading size="md">project one</Heading>
               </Stack>
             </CardBody>
             <Divider />
             <CardFooter>
-              <ButtonGroup spacing="2">
-                <Button variant="solid" colorScheme="blue">
+              <ButtonGroup width="100%" spacing="2">
+                <Button width="50%" variant="solid" colorScheme="blue">
                   demo
                 </Button>
-                <Button variant="ghost" colorScheme="blue">
+                <Button width="50%" variant="solid" colorScheme="blue">
                   gitHub
                 </Button>
               </ButtonGroup>
             </CardFooter>
           </Card>
-          {/* ========================================= */}
-          <Card width="350px">
-            <CardBody>
-              <Image
-                src="/No-Image.jpg"
-                alt="Green double couch with wooden legs"
-                borderRadius="lg"
-              />
-              <Stack mt="6" spacing="3">
-                <Heading size="md">project one</Heading>
-              </Stack>
-            </CardBody>
-            <Divider />
-            <CardFooter>
-              <ButtonGroup spacing="2">
-                <Button variant="solid" colorScheme="blue">
-                  demo
-                </Button>
-                <Button variant="ghost" colorScheme="blue">
-                  gitHub
-                </Button>
-              </ButtonGroup>
-            </CardFooter>
-          </Card>
-          {/* ========================================= */}
-          <Card width="350px">
-            <CardBody>
-              <Image
-                src="/No-Image.jpg"
-                alt="Green double couch with wooden legs"
-                borderRadius="lg"
-              />
-              <Stack mt="6" spacing="3">
-                <Heading size="md">project one</Heading>
-              </Stack>
-            </CardBody>
-            <Divider />
-            <CardFooter>
-              <ButtonGroup spacing="2">
-                <Button variant="solid" colorScheme="blue">
-                  demo
-                </Button>
-                <Button variant="ghost" colorScheme="blue">
-                  gitHub
-                </Button>
-              </ButtonGroup>
-            </CardFooter>
-          </Card>
-          {/* ========================================= */}
-          <Card width="350px">
-            <CardHeader>
-              <Heading size="md"> Customer dashboard</Heading>
-            </CardHeader>
-            <CardBody>
-              <Text>
-                View a summary of all your customers over the last month.
-              </Text>
-            </CardBody>
-            <CardFooter>
-              <Button>View here</Button>
-            </CardFooter>
-          </Card>
-          {/* ========================================= */}
-          <Card width="350px">
-            <CardHeader>
-              <Heading size="md"> Customer dashboard</Heading>
-            </CardHeader>
-            <CardBody>
-              <Text>
-                View a summary of all your customers over the last month.
-              </Text>
-            </CardBody>
-            <CardFooter>
-              <Button>View here</Button>
-            </CardFooter>
-          </Card>
-          {/* ========================================= */}
-          <Card width="350px">
-            <CardHeader>
-              <Heading size="md"> Customer dashboard</Heading>
-            </CardHeader>
-            <CardBody>
-              <Text>
-                View a summary of all your customers over the last month.
-              </Text>
-            </CardBody>
-            <CardFooter>
-              <Button>View here</Button>
-            </CardFooter>
-          </Card>
-          {/* ========================================= */}
-          <Card width="350px">
-            <CardHeader>
-              <Heading size="md"> Customer dashboard</Heading>
-            </CardHeader>
-            <CardBody>
-              <Text>
-                View a summary of all your customers over the last month.
-              </Text>
-            </CardBody>
-            <CardFooter>
-              <Button>View here</Button>
-            </CardFooter>
-          </Card>
-          {/* ========================================= */}
         </SimpleGrid>
       </Box>
     </>
