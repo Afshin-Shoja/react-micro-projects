@@ -12,8 +12,7 @@ export const Hero = () => {
       <Grid
         templateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }}
         gap="4"
-        justifyContent="center"
-        alignItems="center"
+        padding="30px 5px"
       >
         <GridItem width="100%" minWidth={{ md: "50%" }}>
           <Heading fontSize="6xl">Hello</Heading>
