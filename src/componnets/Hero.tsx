@@ -1,8 +1,6 @@
 import { Box } from "@chakra-ui/react";
-import Projects from "./Projects";
-import { Hero } from "./Hero";
 
-export const Body = () => {
+export const Hero = () => {
   return (
     <Box
       padding="20px"
@@ -10,9 +8,8 @@ export const Body = () => {
       border="1px"
       borderColor="gray.200"
       marginTop="10px"
-    >
-      <Hero />
-      <Projects />
-    </Box>
+      backgroundColor="whiteAlpha.500"
+      height="400px"
+    ></Box>
   );
 };
