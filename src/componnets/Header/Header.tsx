@@ -44,29 +44,30 @@ export const Header = () => {
       />
       <Drawer placement={DR} onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
-        <Box>
-          <DrawerContent
-            backgroundImage="url('/grain.png')"
-            backgroundRepeat="repeat"
-            backgroundColor="orange.200"
-            width="78%"
-            marginX="auto"
-          >
-            <DrawerHeader>Menu</DrawerHeader>
-            <DrawerBody overflowY="auto">
-              <p>Some contents...</p>
-              <p>Some contents...</p>
-              <p>Some contents...</p>
-              <p>Some contents...</p>
-              <p>Some contents...</p>
-              <p>Some contents...</p>
-              <p>Some contents...</p>
-              <p>Some contents...</p>
-              <p>Some contents...</p>
-              <p>Some contents...</p>
-            </DrawerBody>
-          </DrawerContent>
-        </Box>
+        <DrawerContent
+          backgroundImage="url('/grain.png')"
+          backgroundRepeat="repeat"
+          backgroundColor="orange.200"
+          width="78%"
+          marginX="auto"
+          alignItems="center"
+          display="flex"
+          borderRadius="0 0 20px 20px"
+        >
+          <DrawerHeader>Menu</DrawerHeader>
+          <DrawerBody overflowY="auto">
+            <p>Some contents...</p>
+            <p>Some contents...</p>
+            <p>Some contents...</p>
+            <p>Some contents...</p>
+            <p>Some contents...</p>
+            <p>Some contents...</p>
+            <p>Some contents...</p>
+            <p>Some contents...</p>
+            <p>Some contents...</p>
+            <p>Some contents...</p>
+          </DrawerBody>
+        </DrawerContent>
       </Drawer>
     </HStack>
   );
