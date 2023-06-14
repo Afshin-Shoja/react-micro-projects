@@ -1,3 +1,4 @@
+import { FaGithub } from "react-icons/fa";
 import { ViewIcon } from "@chakra-ui/icons";
 import {
   SimpleGrid,
@@ -25,6 +26,27 @@ const projectList = [
     picUrl: "/No-Image.jpg",
     Url: "https://example.com/project2",
     categorys: ["category2"],
+  },
+  {
+    projectname: "Project 3",
+    githubLink: "https://github.com/user/repo3",
+    picUrl: "/No-Image.jpg",
+    Url: "https://example.com/project3",
+    categorys: ["category1", "category3"],
+  },
+  {
+    projectname: "Project 3",
+    githubLink: "https://github.com/user/repo3",
+    picUrl: "/No-Image.jpg",
+    Url: "https://example.com/project3",
+    categorys: ["category1", "category3"],
+  },
+  {
+    projectname: "Project 3",
+    githubLink: "https://github.com/user/repo3",
+    picUrl: "/No-Image.jpg",
+    Url: "https://example.com/project3",
+    categorys: ["category1", "category3"],
   },
   {
     projectname: "Project 3",
@@ -101,8 +123,8 @@ const Projects = () => {
                 as="a"
                 href={project.Url}
                 target="_blank"
-                variant="solid"
-                colorScheme="blue"
+                variant="outline"
+                colorScheme="black"
                 leftIcon={<ViewIcon />}
               >
                 demo
@@ -112,8 +134,9 @@ const Projects = () => {
                 as="a"
                 href={project.githubLink}
                 target="_blank"
-                variant="solid"
-                colorScheme="blue"
+                variant="outline"
+                colorScheme="black"
+                leftIcon={<FaGithub />}
               >
                 gitHub
               </Button>
