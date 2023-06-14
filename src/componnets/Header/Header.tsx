@@ -43,7 +43,7 @@ export const Header = () => {
         borderColor="blackAlpha.700"
       />
       <Drawer placement={DR} onClose={onClose} isOpen={isOpen}>
-        {/* <DrawerOverlay /> */}
+        <DrawerOverlay />
         <Box>
           <DrawerContent
             backgroundImage="url('/grain.png')"
