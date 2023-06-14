@@ -18,8 +18,9 @@ export const Hero = () => {
           <Heading fontSize="6xl">Hello</Heading>
           <Text fontSize="2xl">
             In this website, you can view examples of small projects built with
-            the React library. For quicker access, you can select the project
-            title from the top menu.
+            the React library.
+            <br /> For quicker access, you can select the project title from the
+            top menu.
           </Text>
         </GridItem>
         <GridItem width="100%" minWidth={{ md: "50%" }}>

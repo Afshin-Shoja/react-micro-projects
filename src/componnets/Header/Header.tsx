@@ -16,7 +16,7 @@ import {
 
 export const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const DR = "left";
+  const DR = "top";
   return (
     <HStack
       padding="10px"
@@ -43,30 +43,30 @@ export const Header = () => {
         borderColor="blackAlpha.700"
       />
       <Drawer placement={DR} onClose={onClose} isOpen={isOpen}>
-        <DrawerOverlay />
-        <DrawerContent
-          backgroundImage="url('/grain.png')"
-          backgroundRepeat="repeat"
-          backgroundColor="orange.200"
-        >
-          <DrawerHeader borderBottomWidth="1px">Menu</DrawerHeader>
-          <DrawerBody overflowY="auto">
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-          </DrawerBody>
-        </DrawerContent>
+        {/* <DrawerOverlay /> */}
+        <Box>
+          <DrawerContent
+            backgroundImage="url('/grain.png')"
+            backgroundRepeat="repeat"
+            backgroundColor="orange.200"
+            width="78%"
+            marginX="auto"
+          >
+            <DrawerHeader>Menu</DrawerHeader>
+            <DrawerBody overflowY="auto">
+              <p>Some contents...</p>
+              <p>Some contents...</p>
+              <p>Some contents...</p>
+              <p>Some contents...</p>
+              <p>Some contents...</p>
+              <p>Some contents...</p>
+              <p>Some contents...</p>
+              <p>Some contents...</p>
+              <p>Some contents...</p>
+              <p>Some contents...</p>
+            </DrawerBody>
+          </DrawerContent>
+        </Box>
       </Drawer>
     </HStack>
   );
