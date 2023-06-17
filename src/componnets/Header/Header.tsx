@@ -25,6 +25,8 @@ export const Header = () => {
       borderColor="blackAlpha.700"
       position="sticky"
       top="0"
+      backgroundImage="url('/grain.png')"
+      backgroundRepeat="repeat"
       background="orange.200"
       zIndex="20"
     >
