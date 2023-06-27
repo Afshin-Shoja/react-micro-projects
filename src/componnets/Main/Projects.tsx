@@ -14,11 +14,11 @@ import {
 
 const projectList = [
   {
-    projectname: "Project 1",
+    projectname: "StopWatch",
     githubLink: "https://github.com/user/repo1",
     picUrl: "/No-Image.jpg",
-    Url: "https://example.com/project1",
-    categorys: ["category1", "category2"],
+    Url: "/StopWatch",
+    categorys: ["utility", "useState"],
   },
   {
     projectname: "Project 2",

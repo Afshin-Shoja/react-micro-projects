@@ -1,23 +1,16 @@
-import { Box, Container } from "@chakra-ui/react";
-import { Body } from "./componnets/Main/Body";
-import { Footer } from "./componnets/Footer/Footer";
-import { Header } from "./componnets/Header/Header";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home } from "./Home";
+import { StopWatch } from "./projects/01-StopWatch";
 
 function App() {
   return (
-    <Box
-      backgroundImage="url('/grain.png')"
-      backgroundRepeat="repeat"
-      backgroundColor="orange.200"
-      width="100%"
-      position="relative"
-    >
-      <Container maxWidth="1200px">
-        <Header />
-        <Body />
-        <Footer />
-      </Container>
-    </Box>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/StopWatch" element={<StopWatch />} />
+        <Route path="*" element={<div>not found</div>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
