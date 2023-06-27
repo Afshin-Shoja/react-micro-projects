@@ -15,7 +15,8 @@ import {
 const projectList = [
   {
     projectname: "StopWatch",
-    githubLink: "https://github.com/user/repo1",
+    githubLink:
+      "https://github.com/Afshin-Shoja/react-micro-projects/tree/main/src/projects/01-StopWatch",
     picUrl: "/No-Image.jpg",
     Url: "/StopWatch",
     categorys: ["utility", "useState"],
