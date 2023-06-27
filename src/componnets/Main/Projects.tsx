@@ -122,7 +122,7 @@ const Projects = () => {
                 width="50%"
                 as="a"
                 href={project.Url}
-                target="_blank"
+                target="_self"
                 variant="outline"
                 colorScheme="black"
                 leftIcon={<ViewIcon />}
