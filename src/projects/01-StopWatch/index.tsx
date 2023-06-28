@@ -5,7 +5,8 @@ export const StopWatch = () => {
   const [Time, setTime] = useState(0);
   const [running, setRunning] = useState(false);
   useEffect(() => {
-    let interval;
+    let interval: number;
+    interval = 0;
     if (running) {
       interval = setInterval(() => {
         setTime((prevTime) => prevTime + 10);
