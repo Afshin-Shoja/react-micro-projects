@@ -3,6 +3,7 @@ import {
   ButtonGroup,
   Card,
   CardBody,
+  CardHeader,
   HStack,
   Stack,
   Text,
@@ -33,8 +34,10 @@ export const StopWatch = () => {
       </Link>
       <Stack margin="40px auto" width="500px">
         <Card align="center" variant="filled">
-          <CardBody>
+          <CardHeader>
             <Text>StopWatch</Text>
+          </CardHeader>
+          <CardBody alignItems="center">
             <HStack>
               <span>{("0" + Math.floor((Time / 60000) % 60)).slice(-2)}:</span>
               <span>{("0" + Math.floor((Time / 1000) % 60)).slice(-2)}:</span>
@@ -66,6 +69,7 @@ export const StopWatch = () => {
 
                 <Button
                   width="60px"
+                  colorScheme="yellow"
                   onClick={() => {
                     setTime(0);
                     setRunning(false);
