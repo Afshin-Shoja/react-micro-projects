@@ -17,9 +17,9 @@ const projectList = [
     projectname: "StopWatch",
     githubLink:
       "https://github.com/Afshin-Shoja/react-micro-projects/tree/main/src/projects/01-StopWatch",
-    picUrl: "/No-Image.jpg",
+    picUrl: "/project-1.jpg",
     Url: "/StopWatch",
-    categorys: ["utility", "useState"],
+    categorys: ["utility", "useState", "useEffect"],
   },
   {
     projectname: "Project 2",

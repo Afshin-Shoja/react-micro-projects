@@ -35,13 +35,13 @@ export const StopWatch = () => {
         </Button>
       </Link>
       {/* ----------------start-------------------- */}
-      <Stack margin="40px auto" width="200px">
-        <Card align="center" variant="filled" width="200px">
+      <Stack margin="80px auto" width="350px">
+        <Card align="center" variant="filled" width="350px">
           <CardHeader>
-            <Text fontSize="2xl">StopWatch</Text>
+            <Text fontSize="4xl">StopWatch</Text>
           </CardHeader>
           <CardBody alignItems="center">
-            <HStack fontSize="30px">
+            <HStack fontSize="40px">
               <span>{("0" + Math.floor((Time / 60000) % 60)).slice(-2)}:</span>
               <span>{("0" + Math.floor((Time / 1000) % 60)).slice(-2)}:</span>
               <span>{("0" + ((Time / 10) % 100)).slice(-2)}</span>
