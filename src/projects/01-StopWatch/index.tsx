@@ -3,6 +3,7 @@ import {
   ButtonGroup,
   Card,
   CardBody,
+  CardFooter,
   CardHeader,
   HStack,
   Stack,
@@ -27,59 +28,61 @@ export const StopWatch = () => {
   }, [running]);
   return (
     <>
+      {/* ----------------fix btn-------------------- */}
       <Link to="/">
         <Button position="fixed" left="10px" top="10px" colorScheme="green">
           back
         </Button>
       </Link>
-      <Stack margin="40px auto" width="500px">
-        <Card align="center" variant="filled">
+      {/* ----------------start-------------------- */}
+      <Stack margin="40px auto" width="200px">
+        <Card align="center" variant="filled" width="200px">
           <CardHeader>
-            <Text>StopWatch</Text>
+            <Text fontSize="2xl">StopWatch</Text>
           </CardHeader>
           <CardBody alignItems="center">
-            <HStack>
+            <HStack fontSize="30px">
               <span>{("0" + Math.floor((Time / 60000) % 60)).slice(-2)}:</span>
               <span>{("0" + Math.floor((Time / 1000) % 60)).slice(-2)}:</span>
               <span>{("0" + ((Time / 10) % 100)).slice(-2)}</span>
             </HStack>
-            <HStack>
-              <ButtonGroup>
-                {running ? (
-                  <Button
-                    width="60px"
-                    colorScheme="red"
-                    onClick={() => {
-                      setRunning(false);
-                    }}
-                  >
-                    stop
-                  </Button>
-                ) : (
-                  <Button
-                    width="60px"
-                    colorScheme="green"
-                    onClick={() => {
-                      setRunning(true);
-                    }}
-                  >
-                    start
-                  </Button>
-                )}
-
+          </CardBody>
+          <CardFooter>
+            <ButtonGroup>
+              {running ? (
                 <Button
                   width="60px"
-                  colorScheme="yellow"
+                  colorScheme="red"
                   onClick={() => {
-                    setTime(0);
                     setRunning(false);
                   }}
                 >
-                  reset
+                  stop
                 </Button>
-              </ButtonGroup>
-            </HStack>
-          </CardBody>
+              ) : (
+                <Button
+                  width="60px"
+                  colorScheme="green"
+                  onClick={() => {
+                    setRunning(true);
+                  }}
+                >
+                  start
+                </Button>
+              )}
+
+              <Button
+                width="60px"
+                colorScheme="yellow"
+                onClick={() => {
+                  setTime(0);
+                  setRunning(false);
+                }}
+              >
+                reset
+              </Button>
+            </ButtonGroup>
+          </CardFooter>
         </Card>
       </Stack>
     </>
