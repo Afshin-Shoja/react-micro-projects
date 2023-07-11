@@ -1,31 +1,11 @@
-import {
-  Button,
-  ButtonGroup,
-  Card,
-  CardBody,
-  CardFooter,
-  CardHeader,
-  HStack,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Button, Heading, Text, Stack, Grid } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
-export const TodoBoard = () => {
-  const [Time, setTime] = useState(0);
-  const [running, setRunning] = useState(false);
-  useEffect(() => {
-    let interval: number;
-    interval = 0;
-    if (running) {
-      interval = setInterval(() => {
-        setTime((prevTime) => prevTime + 10);
-      }, 10);
-    } else if (!running) {
-      clearInterval(interval);
-    }
-    return () => clearInterval(interval);
-  }, [running]);
+import { Input } from "./components/input";
+import { useState } from "react";
+
+export const TodoBoard: React.FC = () => {
+  const [tasklist, setTasklist] = useState<string[]>([]);
+  console.log(tasklist);
   return (
     <>
       {/* ----------------fix btn-------------------- */}
@@ -35,55 +15,33 @@ export const TodoBoard = () => {
         </Button>
       </Link>
       {/* ----------------start-------------------- */}
-      <Stack margin="80px auto" width="350px">
-        <Card align="center" variant="filled" width="350px">
-          <CardHeader>
-            <Text fontSize="4xl">StopWatch</Text>
-          </CardHeader>
-          <CardBody alignItems="center">
-            <HStack fontSize="40px">
-              <span>{("0" + Math.floor((Time / 60000) % 60)).slice(-2)}:</span>
-              <span>{("0" + Math.floor((Time / 1000) % 60)).slice(-2)}:</span>
-              <span>{("0" + ((Time / 10) % 100)).slice(-2)}</span>
-            </HStack>
-          </CardBody>
-          <CardFooter>
-            <ButtonGroup>
-              {running ? (
-                <Button
-                  width="60px"
-                  colorScheme="red"
-                  onClick={() => {
-                    setRunning(false);
-                  }}
-                >
-                  stop
-                </Button>
-              ) : (
-                <Button
-                  width="60px"
-                  colorScheme="green"
-                  onClick={() => {
-                    setRunning(true);
-                  }}
-                >
-                  start
-                </Button>
-              )}
-
-              <Button
-                width="60px"
-                colorScheme="yellow"
-                onClick={() => {
-                  setTime(0);
-                  setRunning(false);
-                }}
-              >
-                reset
-              </Button>
-            </ButtonGroup>
-          </CardFooter>
-        </Card>
+      <Stack alignItems="center" margin="40px">
+        <Heading marginBottom="20px">TodoBoard</Heading>
+        <Input tasklist={tasklist} setTasklist={setTasklist} />
+        <Grid
+          marginTop="50px"
+          templateColumns={[
+            "repeat(1, 1fr)",
+            "repeat(3, 1fr)",
+            "repeat(4, 1fr)",
+          ]}
+          gap="40px"
+        >
+          {tasklist.map((task, index) => (
+            <Box
+              key={index}
+              bgColor="gray"
+              height="200px"
+              width="200px"
+              rounded="2xl"
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+            >
+              <Text>{task}</Text>
+            </Box>
+          ))}
+        </Grid>
       </Stack>
     </>
   );
