@@ -1,13 +1,12 @@
 import { Box, Button, Heading, Text, Stack, Grid } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { Input } from "./components/input";
+import { InpuT } from "./components/input";
 import { useState } from "react";
 
 export const TodoBoard: React.FC = () => {
   const [tasklist, setTasklist] = useState<string[]>([]);
-  console.log(tasklist);
   return (
-    <>
+    <Box bgColor="yellow.200" minHeight="100vh">
       {/* ----------------fix btn-------------------- */}
       <Link to="/">
         <Button position="fixed" left="10px" top="10px" colorScheme="green">
@@ -15,9 +14,9 @@ export const TodoBoard: React.FC = () => {
         </Button>
       </Link>
       {/* ----------------start-------------------- */}
-      <Stack alignItems="center" margin="40px">
+      <Stack alignItems="center" paddingTop="40px">
         <Heading marginBottom="20px">TodoBoard</Heading>
-        <Input tasklist={tasklist} setTasklist={setTasklist} />
+        <InpuT tasklist={tasklist} setTasklist={setTasklist} />
         <Grid
           marginTop="50px"
           templateColumns={[
@@ -29,8 +28,9 @@ export const TodoBoard: React.FC = () => {
         >
           {tasklist.map((task, index) => (
             <Box
+              position="relative"
               key={index}
-              bgColor="gray"
+              bgColor="blue.200"
               height="200px"
               width="200px"
               rounded="2xl"
@@ -38,11 +38,21 @@ export const TodoBoard: React.FC = () => {
               alignItems="center"
               justifyContent="center"
             >
-              <Text>{task}</Text>
+              {/* <VStack > */}
+              <Text overflow="hidden">{task}</Text>
+              <Button
+                position="absolute"
+                top="8px"
+                right="8px"
+                colorScheme="red"
+              >
+                X
+              </Button>
+              {/* </VStack> */}
             </Box>
           ))}
         </Grid>
       </Stack>
-    </>
+    </Box>
   );
 };
