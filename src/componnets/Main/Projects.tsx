@@ -25,19 +25,20 @@ const projectList = [
     projectname: "TodoBoard",
     githubLink:
       "https://github.com/Afshin-Shoja/react-micro-projects/tree/main/src/projects/02-TodoBoard",
-    picUrl: "/No-Image.jpg",
+    picUrl: "/project-2.jpg",
     Url: "/TodoBoard",
     categorys: ["category2"],
   },
   {
-    projectname: "Project 3",
-    githubLink: "https://github.com/user/repo3",
-    picUrl: "/No-Image.jpg",
-    Url: "https://example.com/project3",
+    projectname: "Steps",
+    githubLink:
+      "https://github.com/Afshin-Shoja/react-micro-projects/tree/main/src/projects/03-Steps",
+    picUrl: "/project-3.jpg",
+    Url: "/Steps",
     categorys: ["category1", "category3"],
   },
   {
-    projectname: "Project 3",
+    projectname: "Coming Soon",
     githubLink: "https://github.com/user/repo3",
     picUrl: "/No-Image.jpg",
     Url: "https://example.com/project3",
